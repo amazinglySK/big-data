@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background-color: black;
+  color: rgb(33, 163, 55);
+  font-size: 100%;
+}
+
+.navbar {
+  background-color: yellowgreen;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 60px;
+  }
+}
+
+.container {
+  display: block;
+  height: fit-content;
+  padding: 20px;
+  margin: 0.2rem;
+  display: flex;
+  .right {
+    display: flex;
+    width: 30vw;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+  }
+}
+
+.video {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    margin-bottom: 20px;
+  }
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 30pt;
+}
+
+ul {
+  li {
+    list-style-type: disc;
+    display: list-item;
+    margin-left: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 30pt;
+  }
+}
+
+footer {
+  background-color: yellowgreen;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  p {
+    font-size: 1rem;
+    color: white;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    .right {
+      display: none;
+    }
+    .left {
+      width: 100vw;
+    }
+  }
+}
